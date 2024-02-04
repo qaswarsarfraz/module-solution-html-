@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>module assignmnet</title>
+    </head>
+         
+        <style>
+        * {
+          font-family:cursive;
+            box-sizing: border-box; 
+            
+        }
+        h1 {
+           
+            text-align: center; 
+        }
+        /*  on mobile interface */
+        .section {
+            width: 90%; 
+            border:solid;
+            background-color:  gray; 
+            order: 1px solid black;
+            position: relative;
+            padding: 10px; 
+            margin: 10px auto;  
+        }
+
+         #t1,#t2,#t3 {
+            position: absolute;
+            top: 0; 
+            right: 0; 
+           
+            border: 3px solid black;
+              font-family:fantasy;
+            padding: 5px; 
+            margin: 5px; 
+          
+        }
+#t1 { 
+   background-color: olivedrab ;            
+        }
+#t2 { 
+  
+            background-color: green; 
+}
+#t3 {
+            background-color: yellow; 
+          
+        }
+
+        .section p {
+            margin-top: 40px; 
+        }
+
+        /* ON tablet  interface */
+        @media (min-width: 768px) and (max-width: 991px) {
+            .section {
+                width: 45%; 
+                float: left; 
+            }
+            #section3 {
+                width: 90%;
+                clear: both; 
+            }
+        }
+
+        /* on desktop interface */
+        @media (min-width: 992px) {
+            .section {
+                width: 30%; 
+                float: left; 
+            }
+        }
+            </style>
+</head>
+
+<body>
+    <h1>Our Menu</h1>
+    <div class="section" id="section1">
+        <div id="t1" class="title">Chicken</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis leo quis nisi malesuada tincidunt. Morbi vitae nisl id eros aliquet tincidunt. </p>
+    </div>
+    <div class="section" id="section2">
+        <div id="t2"  class="title">Beef</div>
+        <p>Nulla facilisi. Phasellus auctor, sapien quis consequat ultrices, augue eros tincidunt massa, at tincidunt lorem nisl quis eros. Sed id nisl quis nunc sagittis sagittis. </p>
+    </div>
+    <div class="section" id="section3">
+        <div id="t3" class="title">Sushi</div>
+        <p>Curabitur quis nisl quis nunc sagittis sagittis. Sed quis leo sit amet leo tincidunt sagittis. Sed quis nisl quis nunc sagittis sagittis. Sed quis leo sit amet leo tincidunt sagittis.</p>
+    </div>
+</body>
+</html>
